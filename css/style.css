@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+.barra {
+    background-color:pink;
+    height: 45px;
+    width: 50%; /*respecto a su contenedor padre*/
+    margin: 130px auto;
+    box-shadow: inset 6px 6px 12px #303030,
+                inset -6px -6px 12px #404040;
+    overflow: hidden;/*cualquier elemento que tenga quede escondido no se desborde*/
+    border: none;
+    border-radius: 20rem;
+}
+
+.progreso {
+    height: 100%;
+    width: 0;
+    background-color:rebeccapurple;
+    box-shadow: 0 0 10px rebeccapurple,
+            0 0 20px rebeccapurple;
+    display: block;
+    border-radius: 20rem;
+}
+
+.porcentaje{
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;/*negrilla*/
+    text-align: center;
+    transform: translateY(100px);
+    color: rebeccapurple;
+}
+
+body.celebracion{
+    background-image: url("../img/celebracion.gif");
+    background-size: cover;/* cubra toda la clase*/
+    background-repeat: no-repeat;
+}
